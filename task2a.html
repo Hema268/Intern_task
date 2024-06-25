@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+  
+let rows = 3;
+let cols = 3;
+let matrix = [];
+let n = 1;
+for (let i = 0; i < rows; i++) {
+    matrix[i] = [];
+    for (let j = 0; j < cols; j++) {
+        matrix[i][j] = n;
+        n++;
+    }
+}
+
+for (let i = 0; i < rows; i++) {
+    let row = '';
+    for (let j = 0; j < cols; j++) {
+        row += matrix[i][j] + ' ';
+    }
+    console.log(row.trim());
+}
+
+
+let array = ["Hema", "B.E.CSE"];
+console.log('Array before push operations:', array);
+array.push(33);
+array.push("vcew");
+
+
+console.log('Array after push operations:', array);
+
+
+array.unshift(2);
+array.unshift(1);
+array.unshift(0);
+
+console.log('Array after unshift operations:', array); 
+
+</script>
+</html>
